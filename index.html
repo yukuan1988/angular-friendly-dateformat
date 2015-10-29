@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+        <script src="app.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div>
+            <h1>
+            Display a Date in a more friendly way!
+            </h1>
+            <hr>
+        </div>
+        <div data-ng-app="friendlyDateApp" data-ng-controller="initController">
+        <div data-ng-repeat="date in dateList">
+          <friendly-name data-date="{{date}}" data-title-class="friendly-date-title" data-content-class="friendly-date-content" data-prefix="friendly date is" data-full-format="d MMM yyyy,h:m a" data-short-format="h:m a"></friendly-name>
+        </div>
+        </div>
+    </body>
+</html>
