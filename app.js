@@ -1,6 +1,6 @@
 (function() {
   var app = angular.module('friendlyDateApp', []);
-  app.directive('friendlyName', ['$filter', function($filter) {
+  app.directive('friendlyDate', ['$filter', function($filter) {
   return {
     scope: {
       date: '@',
